@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+	<head>
+		<meta name="filename" content="Wall.x3d" />
+		<meta name="generator" content="Blender 2.77 (sub 0)" />
+	</head>
+	<Scene>
+		<NavigationInfo headlight="true"
+		                visibilityLimit="0.0"
+		                type='"EXAMINE", "ANY"'
+		                avatarSize="0.25, 1.75, 0.75"
+		                />
+		<Background DEF="WO_World"
+		            groundColor="0.051 0.051 0.051"
+		            skyColor="0.051 0.051 0.051"
+		            />
+		<Transform DEF="Plane_002_TRANSFORM"
+		           translation="1.070076 0.000000 4.119031"
+		           scale="1.000000 1.000000 0.801221"
+		           rotation="0.000000 0.707107 0.707107 3.141593"
+		           >
+			<Transform DEF="Plane_002_ifs_TRANSFORM"
+			           translation="0.000000 0.000000 0.000000"
+			           scale="1.000000 1.000000 1.000000"
+			           rotation="1.000000 0.000000 0.000000 0.000000"
+			           >
+				<Group DEF="group_ME_Plane_022">
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_Material_009"
+							          diffuseColor="0.800 0.783 0.328"
+							          specularColor="0.401 0.401 0.401"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.333"
+							          shininess="0.098"
+							          transparency="0.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="true"
+						                coordIndex="0 1 2 3 -1 0 3 13 4 -1 1 0 5 6 -1 3 2 10 12 -1 5 0 4 14 -1 3 12 18 13 -1 18 12 5 14 -1 16 15 7 11 -1 17 16 11 9 -1 15 19 8 7 -1 9 8 19 17 -1 "
+						                >
+							<Coordinate DEF="coords_ME_Plane_022"
+							            point="-1.007007 -0.922925 0.000000 -1.007007 -0.807767 0.000000 1.462452 -0.807767 0.000000 1.462452 -0.922925 0.000000 -1.007007 -0.922925 0.000000 -1.007007 -0.922925 1.996951 -1.007007 -0.807767 1.996951 -0.380069 -0.807767 0.981393 0.806597 -0.807767 0.981393 0.806597 -0.807767 1.482175 1.462452 -0.807767 1.996951 -0.380069 -0.807767 1.482175 1.462452 -0.922925 1.996951 1.462452 -0.922925 0.000000 -1.007007 -0.922925 1.996951 -0.380069 -0.922925 0.981393 -0.380069 -0.922925 1.482175 0.806597 -0.922925 1.482175 1.462452 -0.922925 1.996951 0.806597 -0.922925 0.981393 "
+							            />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_Material_010"
+							          diffuseColor="0.326 0.000 0.000"
+							          specularColor="0.401 0.401 0.401"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.333"
+							          shininess="0.098"
+							          transparency="0.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="true"
+						                coordIndex="2 1 7 -1 8 9 10 -1 2 7 8 -1 8 10 2 -1 7 1 6 -1 6 10 9 -1 11 7 6 -1 6 9 11 -1 5 12 10 6 -1 "
+						                >
+							<Coordinate USE="coords_ME_Plane_022" />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_Material_031"
+							          diffuseColor="0.800 0.800 0.800"
+							          specularColor="0.401 0.401 0.401"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.333"
+							          shininess="0.098"
+							          transparency="0.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="true"
+						                coordIndex="14 4 15 -1 16 17 18 -1 14 15 16 -1 16 18 14 -1 15 4 13 -1 13 18 17 -1 19 15 13 -1 13 17 19 -1 "
+						                >
+							<Coordinate USE="coords_ME_Plane_022" />
+						</IndexedFaceSet>
+					</Shape>
+				</Group>
+			</Transform>
+		</Transform>
+	</Scene>
+</X3D>

@@ -1,0 +1,73 @@
+<html>
+
+<head>
+<title>Upload Original Image</title>
+<style>
+.buttons {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.buttons:hover {
+    opacity : 0.5;
+
+</style>
+
+</head>
+<body style="background-image:url('background1.jpg');">
+
+<div style="position:absolute; top:180px; left:150px;">
+<form action="saveimage4.php" method="post">
+
+<table>
+
+<tr>
+	<td>PlanID *</td>
+	<td><input type="text" name="planid" id="planid" placeholder="ID" /></td>
+</tr>
+<tr>
+	<td>&nbsp</td>
+</tr>
+<tr>
+	<td>URL *</td>
+	<td><input type="text" name="url" id="url" placeholder="Image URL" /></td>
+</tr>
+<tr>
+	<td>&nbsp</td>
+</tr>
+<tr>
+	<td>Height *</td>
+	<td><input type="number" name="height" id="height" placeholder="Height" /></td>
+</tr>
+<tr>
+	<td>&nbsp</td>
+</tr>
+<tr>
+	<td>width *</td>
+	<td><input type="number" name="width" id="width" placeholder="Width" /></td>
+</tr>
+<tr>
+	<td>&nbsp</td>
+</tr>
+<tr>
+	<td><input type="submit" name="sub" id="sub" value="Upload" class="buttons"/></td>
+	<td><input type="reset" name="res" id="res" value="Cancel" class="buttons"/></td>
+</tr>
+
+
+</table>
+
+</form>
+
+<a href="imagegallery.php"><button class="buttons">Finished</button></a>
+
+</div>
+
+</body>
+
+</html>

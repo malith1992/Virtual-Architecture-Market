@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+	<head>
+		<meta name="filename" content="Corridor.x3d" />
+		<meta name="generator" content="Blender 2.77 (sub 0)" />
+	</head>
+	<Scene>
+		<NavigationInfo headlight="true"
+		                visibilityLimit="0.0"
+		                type='"EXAMINE", "ANY"'
+		                avatarSize="0.25, 1.75, 0.75"
+		                />
+		<Background DEF="WO_World"
+		            groundColor="0.051 0.051 0.051"
+		            skyColor="0.051 0.051 0.051"
+		            />
+		<Transform DEF="Corridorfloor_TRANSFORM"
+		           translation="0.989285 0.005000 -0.356224"
+		           scale="0.322241 0.322241 0.322241"
+		           rotation="0.000000 0.707107 0.707107 3.141593"
+		           >
+			<Transform DEF="Corridorfloor_ifs_TRANSFORM"
+			           translation="0.000000 0.000000 0.000000"
+			           scale="1.000000 1.000000 1.000000"
+			           rotation="1.000000 0.000000 0.000000 0.000000"
+			           >
+				<Group DEF="group_ME_Plane_022">
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_Material_004"
+							          diffuseColor="0.662 0.606 0.269"
+							          specularColor="0.401 0.401 0.401"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.333"
+							          shininess="0.098"
+							          transparency="0.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="true"
+						                coordIndex="0 1 2 3 -1 1 4 5 2 -1 6 7 8 9 -1 8 7 17 13 -1 9 8 14 10 -1 11 10 15 16 -1 13 19 14 8 -1 10 14 20 15 -1 21 17 7 12 -1 12 18 23 21 -1 20 14 19 22 -1 19 21 23 22 -1 23 18 20 22 -1 "
+						                >
+							<Coordinate DEF="coords_ME_Plane_022"
+							            point="-11.038829 -1.201625 -0.000015 11.009436 -1.201625 -0.000015 11.009436 1.076975 -0.000015 -11.038829 1.076975 -0.000015 11.009436 -1.062329 -0.000015 11.009436 1.077282 -0.000015 -11.026237 -1.135874 0.009649 -11.026237 1.052312 0.009649 -10.591393 1.052312 0.009649 -10.591393 -1.135874 0.009649 -10.591393 -1.135874 4.543090 -11.026237 -1.135874 4.543090 -11.026237 1.052312 4.543090 -10.591393 1.052312 0.009649 -10.591393 1.052312 4.543090 -10.591393 -1.135874 4.730113 -11.026237 -1.135874 4.730113 -11.026237 1.052312 0.009649 -11.026237 1.052312 4.730113 -10.591393 1.052312 4.543090 -10.591393 1.052312 4.730113 -11.026237 1.052312 4.543090 -10.591393 1.052312 4.730113 -11.026237 1.052312 4.730113 "
+							            />
+						</IndexedFaceSet>
+					</Shape>
+					<Shape>
+						<Appearance>
+							<Material DEF="MA_Material_016"
+							          diffuseColor="0.439 0.049 0.000"
+							          specularColor="0.401 0.401 0.401"
+							          emissiveColor="0.000 0.000 0.000"
+							          ambientIntensity="0.333"
+							          shininess="0.098"
+							          transparency="0.0"
+							          />
+						</Appearance>
+						<IndexedFaceSet solid="true"
+						                coordIndex="6 9 10 11 -1 7 6 11 12 -1 12 11 16 18 -1 16 15 20 18 -1 13 17 21 19 -1 "
+						                >
+							<Coordinate USE="coords_ME_Plane_022" />
+						</IndexedFaceSet>
+					</Shape>
+				</Group>
+			</Transform>
+		</Transform>
+	</Scene>
+</X3D>

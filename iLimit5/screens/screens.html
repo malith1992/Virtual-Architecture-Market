@@ -1,0 +1,68 @@
+<html>
+
+<head>
+<script src="html2canvas.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+
+function genScreenshot() {
+    html2canvas($("#text"), {
+      onrendered: function(canvas) {
+      $('#box1').html("");
+			$('#box1').append(canvas);
+      
+      if (navigator.userAgent.indexOf("MSIE ") > 0 || 
+					navigator.userAgent.match(/Trident.*rv\:11\./)) 
+			{
+      	var blob = canvas.msToBlob();
+        window.navigator.msSaveBlob(blob,'Test file.png');
+      }
+      else {
+        $('#test').attr('href', canvas.toDataURL("image/png"));
+        $('#test').attr('download','Test file.png');
+        $('#test')[0].click();
+      }
+      
+      
+      }
+    });
+}
+
+</script>
+
+<style>
+
+#box1 {
+  width:400px;
+  height:300px;
+  border-style: solid;
+  border-width: 2px;
+}
+canvas {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<a href="javascript:genScreenshot()"> Get Screenshot</a>
+<a id="test"></a>
+<div id="text">
+Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit. 
+
+</div>
+<br>
+<div id="box1">
+</div>
+
+
+</body>
+
+
+</html>

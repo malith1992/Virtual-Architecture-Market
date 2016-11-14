@@ -1,0 +1,41 @@
+body {
+    background-color: #59ABE3;
+}
+
+ .navigationb{
+            background-color: #4B77BE;
+        }
+        
+.sitetitle{
+            color: #2980b9;
+        }
+        
+.navbtns:hover{
+            color:#000000;
+        }
+
+.backgcolor{
+      background-color: #bdc3c7;
+}
+
+.darkwell{
+    background-color: #3498DB;
+}
+
+.contain{
+   background-color:#59ABE3;
+}
+
+.lightwell{
+    background-color:#6BB9F0;
+}
+
+.btncol{
+  background-color:#1E824C;
+}
+
+btntext{
+  color:#000000;
+}
+
+
